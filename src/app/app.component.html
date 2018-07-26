@@ -1,14 +1,5 @@
-<div class="main">
-  <h2>{{title}}</h2>
-<h1>Treatment for Diseases</h1>
-<div class="addItem">
-<input [(ngModel)]="newitem" placeholder="Add Item" class="addText">
-<button (click) = "pushitem()">Add</button>
-<ul>
-  <li *ngFor ="let i of items" let ind="index">
-    {{i}}
-    <span (click) ="removeitem(ind)">x</span>
-  </li>
-</ul>
-</div>
+<div class="main-container">
+  <span>Main Container</span>
+  <app-names></app-names>
+  
 </div>
